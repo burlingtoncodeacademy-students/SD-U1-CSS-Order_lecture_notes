@@ -1,0 +1,36 @@
+nav {
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+
+.btn {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#home {
+    float: left;
+}
+
+/*
+!   Hierarchy:
+    - !important
+    - Inline CSS
+    - ID Selectors
+    - Class Selectors
+    - Elements
+*/
+
+
+
+/* 
+    Compound Operators:
+        >   Refers to direct children of an element
+        ,   Matching selector
+        +   Immediate sibling of an element
+        ~   Subsequent sibling of an element
+*/
