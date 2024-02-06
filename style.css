@@ -3,6 +3,11 @@ nav {
     overflow: hidden;
 }
 
+#home {
+    float: left;
+    color: darkgreen !important;
+}
+
 .btn {
     float: right;
     color: black;
@@ -10,10 +15,6 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-#home {
-    float: left;
 }
 
 /*
@@ -25,8 +26,6 @@ nav {
     - Elements
 */
 
-
-
 /* 
     Compound Operators:
         >   Refers to direct children of an element
@@ -34,3 +33,30 @@ nav {
         +   Immediate sibling of an element
         ~   Subsequent sibling of an element
 */
+
+nav .btn {
+    /* points to the Nav and ANY class withi it, or children of, named 'btn' */
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+div .paragraph > p {
+    /* targeting any div within a class "paragraph" that is holding a <p> element */
+    color: red;
+}
+
+.paragraph + div {
+    color: purple;
+}
+
+a:hover {
+    color: lightblue;
+    /* 
+    mousing over any anchor tag will alter its color.
+        - "home" doesn't change due to !important
+    */
+}
+
+a:active {
+    color: purple;
+    text-shadow: 2px 2px 2px rgb(255,255,255)
+}
